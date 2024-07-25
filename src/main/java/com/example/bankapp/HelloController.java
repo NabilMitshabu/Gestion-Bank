@@ -54,6 +54,22 @@ public class HelloController {
     public void transfert(MouseEvent mouseEvent) {
     }
 
+
+    public void insertCompteBancaire(CompteBancaire compte) throws SQLException {
+        String sql = "INSERT INTO CompteBancaire (numeroCompte, titulaire, solde, type, tauxInteret) VALUES (?, ?, ?, ?, ?)";
+        connect();
+
+        PreparedStatement statement = jdbcConnection.prepareStatement(sql);
+        statement.setString(1, compte.getNumeroCompte());
+        statement.setString(2, compte.getTitulaire());
+        statement.setBigDecimal(3, compte.getSolde());
+        statement.setString(4, compte.getType());
+        statement.setBigDecimal(5, compte.getTauxInteret());
+
+        statement.executeUpdate();
+        statement.close();
+        disconnect();
+    }
     public void ajouterCompte(MouseEvent mouseEvent) throws IOException {
         Stage stage = null;
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ajouterCompte.fxml"));
