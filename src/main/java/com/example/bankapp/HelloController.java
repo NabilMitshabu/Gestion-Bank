@@ -55,6 +55,8 @@ public class HelloController {
     }
 
 
+    public void ajouterCompte1(MouseEvent mouseEvent) {
+    }
     public void insertCompteBancaire(CompteBancaire compte) throws SQLException {
         String sql = "INSERT INTO CompteBancaire (numeroCompte, titulaire, solde, type, tauxInteret) VALUES (?, ?, ?, ?, ?)";
         connect();
