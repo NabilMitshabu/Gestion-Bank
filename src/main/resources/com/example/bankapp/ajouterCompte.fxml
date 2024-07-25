@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankapp.BanqueControl">
+   <children>
+      <Label layoutX="212.0" layoutY="38.0" prefHeight="36.0" prefWidth="183.0" text="Entrez les coordonnees" />
+      <Label layoutX="181.0" layoutY="98.0" prefHeight="36.0" prefWidth="224.0" text="Numero Compte" />
+      <TextField fx:id="numCh" layoutX="181.0" layoutY="136.0" prefHeight="25.0" prefWidth="231.0" promptText="numero compte" />
+      <Label layoutX="181.0" layoutY="157.0" prefHeight="36.0" prefWidth="231.0" text="Titulaire" />
+      <TextField fx:id="nomch" layoutX="181.0" layoutY="198.0" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="185.0" layoutY="226.0" prefHeight="36.0" prefWidth="224.0" text="Montant" />
+      <TextField fx:id="montantch" layoutX="181.0" layoutY="266.0" prefHeight="25.0" prefWidth="231.0" />
+      <Button fx:id="ajoutbtn" layoutX="378.0" layoutY="501.0" mnemonicParsing="false" onAction="#ajouter" style="-fx-background-color: green;" text="ajouter" textFill="#fcf9f9" />
+      <Label layoutX="184.0" layoutY="292.0" prefHeight="36.0" prefWidth="231.0" text="Type" />
+      <TextField fx:id="typech" layoutX="184.0" layoutY="325.0" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="185.0" layoutY="360.0" prefHeight="25.0" prefWidth="231.0" text="Decouverte" />
+      <TextField fx:id="decouvertech" layoutX="184.0" layoutY="385.0" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="181.0" layoutY="410.0" prefHeight="25.0" prefWidth="224.0" text="Taux" />
+      <TextField fx:id="tauxch" layoutX="185.0" layoutY="434.0" prefHeight="25.0" prefWidth="231.0" />
+   </children>
+</Pane>
