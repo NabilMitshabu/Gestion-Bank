@@ -4,10 +4,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectDatabase {
-    String jdbcUrl = "jdbc:mysql://localhost:3306/java";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/b";
     String username = "root";
     String password = "";
-    String databaseName = "java";
+    String databaseName = "b";
 
     public Connection connected(){
         try{
