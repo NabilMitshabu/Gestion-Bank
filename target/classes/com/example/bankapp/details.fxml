@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankapp.HelloController">
+    <Label text="Détails du Compte" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+    <Label text="Numéro de Compte:" />
+    <TextField fx:id="numCompteField" editable="false" />
+    <Label text="Titulaire:" />
+    <TextField fx:id="titulaireField" editable="false" />
+    <Label text="Solde:" />
+    <TextField fx:id="soldeField" editable="false" />
+    <Label text="Type:" />
+    <TextField fx:id="typeField" editable="false" />
+    <Button text="Fermer"  />
+</VBox>
+
